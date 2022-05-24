@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head> 
+    <title>Agendamentos!!</title>
+<style>
+input [type=text] {
+    width: 100%
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+form {
+  background-color: white;
+}
+body {
+margin:0;
+}
+div{
+    margin-top:20px;
+	padding:20px;
+	text-align:justify;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position:fixed;
+  top:0;
+  width:100%;
+ }
+ 
+ li {
+   float: left;
+   border-right:1px solid red;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+li:last-child {
+border-right: none;
+float:right;
+}
+img {
+  position: center;
+}
+.foto{
+    padding: 5px;
+	float: left;
+	margin: 10px;
+}
+.centralizar{
+  width: 1320px;
+  margin:auto;
+  }
+.clear{
+   clear: both;
+    }
+p.formatar{
+    text-align: justify;
+	margin:20px;
+    ;
+figure {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+p {
+ background-color: #B22222;
+}
+background {
+ background-repeat: no-repeat;
+
+}
+</style>
+</head>
+<body background="fundin.png">
+<ul>
+   <li><a class="active" href="projeto cinema.html">Filmes em Catalogo</a></li>
+   <li><a href="Agendamento.html">Agendamento</a></li>
+   <li><a href="Preços.html">Preços Loja/Ingressos</a></li>
+</ul>
+<br><br><br><br>
+
+<form action="mailto:rai.yamanaka@gmail.com" target="_blank" method="POST">
+<fieldset>
+<legend> Agendamento </legend>
+ <label for=nome1 > Nome: </label> <br>
+  <input type="text" id=nome1 name="nome">
+  <br>
+  <label for=sobre> Sobrenome: </label> <br>
+    <input type="text" id=sobre name="sobrenome">
+	<br><br>
+	<label for=dt_nascimento> Data de Nascimento: </label><br>
+	 <input type="date" id=dt_nascimento name="nascimento" value="">
+	 <br>
+	<label for=email> e-mail: </label><br>
+	<input type="email" id=email name="email" value="">
+	<br>
+	<input type="radio" id="Criança" name="est_civil" value="casado">
+  <label for="Criança">Criança</label><br>
+  
+  <input type="radio" id="Estudante" name="est_civil" value="casado">
+  <label for="Estudante">Estudante</label><br>
+  
+   <input type="radio" id="Adulto" name="est_civil" value="viuvo">
+  <label for="Adulto">Adulto</label><br>
+  
+   <input type="radio" id="Idoso" name="est_civil" value="divorciado">
+  <label for="Idoso">Idoso</label><br>
+  <br>
+<label>
+   Cinema:
+    <select name="filmes">
+	<optgroup label="Filmes e horarios:Dia">
+	  <option value="estr">Doutor Estranho 14:00</option>
+	  <option value="verso">Aranhaverso 13:00</option>
+	  <option value="way">No way home 15:00</option>
+	</optgroup>
+	<optgroup label="Filmes e horarios:Noite">
+	  <option value="estr">Doutor Estranho 21:00</option>
+	  <option value="verso">Aranhaverso 19:00</option>
+	  <option value="way">No way home 22:00</option>
+	</optgroup>
+	</select>
+</label>
+<br><br>
+<label for=senha> Numero do Cartão </label><br>
+	<input type="password" id=senha name="Senha" value="">
+	<br><br>
+</label>
+<label>
+      Cartões
+<input list="browsers" name="browser">
+</label>
+	<datalist id="browsers">
+    <option value="VISA">
+	<option value="Master Card">
+	<option value="Itaú">
+	<br><br>
+    </datalist>
+	<br><br>
+<label for=dt_nascimento> Data de vencimento do cartão </label><br>
+	 <input type="date" id=dt_nascimento name="nascimento" value="">
+</label>
+	 <br>
+<label for=senha> Codigo de segurança </label><br>
+	<input type="password" id=senha name="Senha" value="">
+	<br><br>
+      	
+<p><strong>AVISO! Para pagar meia tem que apresentar o RG na hora de entregar o ingresso</strong></p>
+
+<input type="submit">
+</fieldset>
+
+
+</body>
+</html>
+    
